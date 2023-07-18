@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --form-border: #E5E7EB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @font-face {
     font-family: "Norse-Bold";
     src: url("./Norse-Bold.otf");
 }
 
 body {
+    font-size: 16px;
     margin: 0;
     padding: 0 15vw 0 15vw;
     display: flex;
@@ -16,7 +22,7 @@ body {
 }
 
 .image-side-panel {
-    width: 35vw;
+    width: 25vw;
     height: 100vh;
     background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
@@ -27,7 +33,7 @@ body {
 }
 
 .form-side-panel {
-    width: 65vw;
+    width: 45vw;
     height: 100vh;
     background-color: white;
 }
@@ -61,3 +67,50 @@ body {
 .photo-credit a{
     color: white;
 }
+
+.sign-up-form-top {
+    box-shadow: 0 5px var(--form-border), 0 -2px var(--form-border);
+    padding: 0 50px 20px 50px;
+}
+
+.sign-up-form-message {
+    padding-top: 20px;
+}
+
+.disclaimer {
+    margin: 100px 50px 50px 50px;
+    font-size: 2rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 300px;
+    margin-bottom: 20px;
+}
+
+.form-row div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.sign-up-form button {
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1rem;
+    background-color: #596D48;
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+
+.already-have-account {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.already-have-account span {
+    color: #596D48;
+}
+
