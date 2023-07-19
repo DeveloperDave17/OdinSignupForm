@@ -3,7 +3,7 @@
 }
 
 :root {
-    --form-border: #E5E7EB;
+    --form-background: #E5E7EB;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,7 +35,7 @@ body {
 .form-side-panel {
     width: 45vw;
     height: 100vh;
-    background-color: white;
+    background-color: var(--form-background);
 }
 
 .logo-and-name {
@@ -69,8 +69,9 @@ body {
 }
 
 .sign-up-form-top {
-    box-shadow: 0 5px var(--form-border), 0 -2px var(--form-border);
+    box-shadow: 0px 5px lightgray, 0px -2px lightgray;
     padding: 0 50px 20px 50px;
+    background-color: white;
 }
 
 .sign-up-form-message {
@@ -89,10 +90,27 @@ body {
     margin-bottom: 20px;
 }
 
+.form-row label {
+    color: rgb(56, 55, 55);
+    margin-bottom: 2px;
+}
+
 .form-row div {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
+}
+
+.form-row input {
+    font-size: 16px;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.form-row input:focus {
+    outline: none;
+    border: 2px solid rgb(12, 12, 195);
+    border-radius: 4px;
 }
 
 .sign-up-form button {
