@@ -80,14 +80,13 @@ body {
 
 .disclaimer {
     margin: 100px 50px 50px 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-between;
-    margin-right: 300px;
-    margin-bottom: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .form-row label {
@@ -99,6 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .form-row input {
