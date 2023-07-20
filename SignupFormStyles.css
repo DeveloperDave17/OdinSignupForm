@@ -132,3 +132,7 @@ body {
     color: #596D48;
 }
 
+input.error {
+    border-color: red;
+}
+
